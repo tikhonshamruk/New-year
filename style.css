@@ -1,0 +1,297 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+
+
+header{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 82px;
+    padding-right: 82px;
+    padding-top:12px;
+    padding-bottom: 12px;
+}
+
+.header_logo{
+    width: 141px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar{
+    flex-grow: 1;
+}
+
+.navbar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: flex-end;;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 20px;
+    height: 4px;
+    background-color: #181C29;
+    margin: 4px 0;
+}
+
+
+@media (max-width: 768px) {
+
+    header{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .navbar {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+}
+
+
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.main_thumnail{
+    padding-top: 120px;
+    background-color: #FF4646;
+    color:white;
+    background-image: url('./Home/cyrcl.png'), url('./Home/snoww.png');
+    display: flex;
+    min-height: 524px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.snow{
+   
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin:0 auto;
+    max-width: 426px;
+}
+
+.snow_allury{
+    font-family: Allura;
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.snow_mont{
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 15px;
+    line-height: 48px;
+}
+
+
+.snow button{
+    margin:0 auto;
+    display: block;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 12px;
+    background-color: #181C29;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left: 32px;
+    padding-right: 32px;
+    color: white;
+    width: 235px;
+    border-radius: 20px;
+}
+
+@media (max-width: 380px) {
+    .main_thumnail{
+        padding-top: 100px;
+    }
+    .snow{
+        max-width: 320px;
+    }
+}
+
+
+
+
+.unleash{
+    background-color: #FF4646;
+    background-image: url('./Home/snoww.png');
+    min-height: 648px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 8px;
+    padding-left: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.unleash_row{
+    max-width:1276px;
+    flex: 1;    
+    background-color:brown;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
+
+.unleash_row_first,
+.unleash_row_second{
+    flex:1
+}
+
+.unleash_row_second img {
+    max-width: 100%; /* Ограничиваем ширину изображения */
+    height: 100%;
+    
+    object-fit: cover;
+}
+
+.unleash_row_second{
+    background-color: aqua;
+}
+
+@media screen and (max-width: 450px){
+
+    .unleash_row{
+        flex-direction: column;
+        min-height:880px;
+    }
+    .unleash_row_first,
+    .unleash_row_second{
+        flex: auto;
+    }
+
+    .unleash_row_second img {
+        /* height: 528px */
+    }
+}
+
+
+
+.slider{
+    min-height: 488px;
+    /* display: flex; */
+    background-color: goldenrod;
+    padding-top:60px;
+    padding-bottom: 60px;
+    padding-left:82px;
+}
+
+.slider_row{
+    
+}
+
+.carousel {
+    overflow: hidden;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 2073px; /* Длина всей ленты */
+}
+
+.carousel-item {
+    min-width: 300px; /* Ширина каждого элемента */
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid #aaa;
+    text-align: center;
+}
+
+/* .unleash_pair{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1276px;
+    margin:0 auto;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.new_year{
+
+}
+
+.santa_img{
+    border-radius: 15px;
+    object-fit: cover;
+} */
+
+@media screen and (max-width:768px){
+    .unleash_pair{
+        flex-direction: column;
+    }
+    .new_year, .new_santa{
+        width: 100%;
+    }
+    .santa_img{
+        width: 364px;
+        object-fit: contain;
+    }
+}
+
+
+
+footer{
+    background-color: blue;
+}
+
+@media (min-width:768px) {
+    
+}
